@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    label {
+      flex: 1;
+    }
+
+    input {
+      flex: 2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>HTML Forms</h2>
+  <label <form action="/action_page.php">
+    <div class="form-group">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname">
+    </div>
+    <div class="form-group">
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname">
+    </div>
+    <div class="form-group">
+      <label for="tel">Tel:</label>
+      <input type="text" id="tel" name="tel">
+    </div>
+    <input type="submit" value="Submit">
+    <a href="test.html "> Previes page</a> <br>
+    </form>
+
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+
+</html>

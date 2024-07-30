@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+</head>
+
+<body background="D:\New folder\DOG.jpg">
+
+    <h1>เครื่องคิดเลขง่ายๆ</h1>
+    <input type="number" id="num1" placeholder="กรอกตัวเลขแรก">
+    <input type="number" id="num2" placeholder="กรอกตัวเลขที่สอง">
+    <button onclick="calculateSum()">คำนวณ</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateSum() {
+            // ดึงค่าจากช่อง input
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+
+            // ตรวจสอบว่าค่าที่กรอกเป็นตัวเลขหรือไม่
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("กรุณากรอกตัวเลขเท่านั้น");
+                return;
+            }
+
+            // แปลงค่าเป็นตัวเลข (number)
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+
+            // คำนวณผลรวม
+            let sum = num1 + num2;
+
+            // แสดงผลลัพธ์
+            document.getElementById("result").textContent = "ผลรวมคือ: " + sum;
+        }
+    </script>
+</body>
+
+</html>

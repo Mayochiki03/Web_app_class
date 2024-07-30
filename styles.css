@@ -1,0 +1,31 @@
+input[type="text"] {
+    padding: 20px;
+    border: 1px solid #d0f371;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  table {border-style: solid;
+    border-width: px;}
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+      }
+  
+  .form-container label,
+  .form-container input {
+    margin-bottom: 10px;
+  }
+  
